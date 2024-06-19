@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150vh;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: #020205;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+form {
+    background: bisque;
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 800px; /* Incrementa el ancho máximo */
+    margin: 0 20px; /* Margen horizontal */
+}
+
+form:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 800;
+    color: #333;
+    font-size: 18px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 5px rgba(255, 111, 97, 0.3);
+    outline: none;
+}
+
+form input[type="submit"] {
+    background-color: #617eff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 14px;
+    border-radius: 8px;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ff3b2f;
+    transform: scale(1.02);
+}
+
+form input:invalid {
+    border-color: #ff3b2f;
+}
+
+form .form-group input[type="text"]:invalid,
+form .form-group input[type="email"]:invalid,
+form .form-group input[type="password"]:invalid,
+form .form-group input[type="tel"]:invalid,
+form .form-group input[type="date"]:invalid {
+    border-color: #ff3b2f;
+}
+
+form .form-group input[type="text"]:valid,
+form .form-group input[type="email"]:valid,
+form .form-group input[type="password"]:valid,
+form .form-group input[type="tel"]:valid,
+form .form-group input[type="date"]:valid {
+    border-color: #4CAF50;
+}
